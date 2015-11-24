@@ -9,6 +9,6 @@ let result = Array.sum (numbers
             |> (filter 3)
             |> (filter 5)
             |> Seq.toArray)
-
+             
 printfn "%d" result
 
