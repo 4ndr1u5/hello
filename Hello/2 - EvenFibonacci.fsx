@@ -2,3 +2,12 @@
 //1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
 //By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
+
+let fibSeq = Seq.unfold (fun (a,b) -> Some( a+b, (b, a+b) ) ) (0,1)
+
+let result = fibSeq 
+            |> Seq.takeWhile (fun x -> x<=4000000 )
+            |> Seq.filter(fun x -> x%2=0) 
+            |> Seq.sum
+
+printfn "%A" fibSeq
