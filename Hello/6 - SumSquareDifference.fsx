@@ -12,7 +12,7 @@ let numbers = {1.0.. 100.0}
 
 let sumOfSquares = numbers |> Seq.fold(fun res x -> res + float x ** 2.0) 0.0
 
-let squareOfSum = (numbers |> Seq.fold(fun res x -> res + float x) 0.0) ** 2.0
+let squareOfSum = (numbers |> Seq.fold(+) 0.0) ** 2.0
 
 
 let result = squareOfSum - sumOfSquares

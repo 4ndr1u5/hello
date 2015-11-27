@@ -5,18 +5,18 @@
 
 open System
  
-let is_prime x =
+let isPrime x =
     let rec check i =
         x > 1L &&
        (double i > sqrt (double x) || (x % i <> 0L && check (i + 1L)))
     check 2L                
  
-let sequence_of_first_n_primes n =
+let firstPrimes n =
     Seq.initInfinite (fun x -> int64 x)
-    |> Seq.filter is_prime
+    |> Seq.filter isPrime
     |> Seq.take n
     |> Seq.max
 
-let result = sequence_of_first_n_primes 10001
+let result = firstPrimes 10001
 
 printfn "%A" result

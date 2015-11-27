@@ -57,6 +57,10 @@
     <None Include="3 - LargertPrimeFactor.fsx" />
     <None Include="4 - LargePalindromeProduct.fsx" />
     <None Include="packages.config" />
+    <None Include="5 - SmallesMultiple.fsx" />
+    <None Include="6 - SumSquareDifference.fsx" />
+    <None Include="7 - 10001stPrime.fsx" />
+    <None Include="8 - LargestProductInASeries.fsx" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
