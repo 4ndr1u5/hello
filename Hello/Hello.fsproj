@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.fs" />
     <None Include="App.config" />
     <None Include="1 - ThreeFiveMultipliers.fsx" />
     <None Include="2 - EvenFibonacci.fsx" />
@@ -78,6 +77,16 @@
     <None Include="ML01.fsx" />
     <None Include="10 - SummationOfPrimes.fsx" />
     <None Include="11 - LargestProductInAGrid.fsx" />
+    <None Include="12 - HighlyDivisibleTriangularNumber.fsx" />
+    <None Include="14 - LongestCollatzSequence.fsx" />
+    <None Include="15 - LatticePaths.fsx" />
+    <None Include="16 - PowerDigitSum.fsx" />
+    <Compile Include="L-system.fs" />
+    <Compile Include="Program.fs" />
+    <None Include="17 - NumberLetterCounts.fsx" />
+    <None Include="18 - MaximumPathSum.fsx" />
+    <None Include="L-system.fsx" />
+    <None Include="17 - CountingSundays.fsx" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
