@@ -86,7 +86,10 @@
     <None Include="17 - NumberLetterCounts.fsx" />
     <None Include="18 - MaximumPathSum.fsx" />
     <None Include="L-system.fsx" />
-    <None Include="17 - CountingSundays.fsx" />
+    <None Include="19 - CountingSundays.fsx" />
+    <None Include="20 - FactorialDigitSum.fsx" />
+    <None Include="21 -AmicableNumbers.fsx" />
+    <None Include="22 - NamesScores.fsx" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
