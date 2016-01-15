@@ -90,6 +90,8 @@
     <None Include="20 - FactorialDigitSum.fsx" />
     <None Include="21 -AmicableNumbers.fsx" />
     <None Include="22 - NamesScores.fsx" />
+    <None Include="23 - NonAbundantSums.fsx" />
+    <None Include="24 - LexicographicPermutations.fsx" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>

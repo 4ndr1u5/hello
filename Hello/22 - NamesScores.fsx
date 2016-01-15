@@ -15,12 +15,8 @@ let readLines (filePath:string) =
 let score (name:string) = name.ToCharArray() |> Array.map(fun x -> int x - 64) |> Array.sum
 
 let parseStringIntoSeq (str:string) = str.Replace("\"", "").Split(',') |> Seq.ofArray 
-//let finalScoreSingle names (name:string) = names |> Seq.sort |> Seq.mapi(fun i x-> ((i+1) * score x, x)) |> Seq.filter(fun (x,y) -> y=name)
+let finalScoreSingle names (name:string) = names |> Seq.sort |> Seq.mapi(fun i x-> ((i+1) * score x, x)) |> Seq.filter(fun (x,y) -> y=name)
 let finalScore names = names |> Seq.sort |> Seq.mapi(fun i x-> (i+1) * score x) |> Seq.sum
 
 let result = filePath |> readLines |> parseStringIntoSeq |> finalScore
 
-
-let actualNames = readLines filePath
-
-//finalScoreSingle (parseStringIntoSeq(readLines(filePath))) "COLIN"
